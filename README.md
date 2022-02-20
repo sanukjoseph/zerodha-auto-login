@@ -9,7 +9,7 @@ This package use's :
 kiteconnect@latest // The official Javascript node client for communicating with the Kite Connect API.
 puppeteer //for automation process.
 
-you have to pass :
+Reuirements:
 
         API key, 
         Secret Key, 
@@ -37,8 +37,10 @@ then :
 
          console.log(login)
 
-//pass props to the function based on above pattern only..
-//every time you call this function, a chromium browser will open and login to zerodha and return access token to your console.
+pass props to the function based on above pattern only..
+
+
+     " Every time you call this function, a chromium browser will open and login to zerodha and return access token to your console."
 
 console.log(login)
 
@@ -49,3 +51,8 @@ Output -
          Access Token : `*************Access Token*************`
 
 
+Currently used versions : 
+
+         Node.js : v17.4.0
+         Puppeteer : ^13.3.2
+         Kite Connect : ^4.0.0
