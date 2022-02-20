@@ -27,6 +27,8 @@ After installing package..
                     "TOTP"
                     )
 
+                    console.log(login)
+
 //pass props to the function based on above pattern only..
 //every time you call this function, a chromium browser will open and login to zerodha and return access token to your console.
 
