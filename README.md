@@ -19,8 +19,10 @@ After installing package..
                                         or 
                    const zerodhaLogin = require("zerodha-auto-login")
 
+then :
+
                    const login = zerodhaLogin(
-                    "API",
+                    "Public API Key",
                     "Secret API Key",
                     "Client ID",
                     "Client Password",
