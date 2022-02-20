@@ -23,6 +23,7 @@
   "homepage": "https://github.com/sanukjoseph/zerodha-auto-login.git#readme",
   "dependencies": {
     "kiteconnect": "^4.0.0",
-    "puppeteer": "^13.3.2"
+    "puppeteer": "^13.3.2",
+    "zerodha-auto-login": "^1.0.5"
   }
 }

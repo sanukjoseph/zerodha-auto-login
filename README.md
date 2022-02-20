@@ -1,5 +1,10 @@
 This package is for automating zerodha login & access token generation on an individual basis.
 
+        npm i zerodha-auto-login
+
+        yarn add zerodha-auto-login
+
+
 This package is focused on the algo trading, and requires TOTP apps **6 digit authentication code** for Kite 2FA.
 
 If your account is not TOTP enabled, follow this link:
@@ -15,23 +20,31 @@ Requirements:
 
 ***Note only TOTP pin should be passed as a prop and not user pin for login..***
 
+This package also installs the following packages: 
+
+       npm install kiteconnect@latest
+
+       npm i puppeteer
+       
+
+
 After installing package..
 
-         import zerodhaLogin from "zerodha-auto-login" 
-                              or 
-         const zerodhaLogin = require("zerodha-auto-login")
+        import zerodhaLogin from "zerodha-auto-login" 
+                             or 
+        const zerodhaLogin = require("zerodha-auto-login")
 
 then :
 
         const login = zerodhaLogin(
-         "Public API Key",
-         "Secret API Key",
-         "Client ID",
-         "Client Password",
-         "TOTP"
-         )
+        "Public API Key",
+        "Secret API Key",
+        "Client ID",
+        "Client Password",
+        "TOTP"
+        )
 
-         console.log(login)
+        console.log(login)
 
 
 Pass props to the function based on above pattern only. Every time you call this function, a chromium browser will open and login to zerodha and return access token to your console.
@@ -40,13 +53,13 @@ Pass props to the function based on above pattern only. Every time you call this
 
 Output -
 
-         Page URL : https://*****your-domain-name*****
-         Request Token : `*************Request Token*************`
-         Access Token : `*************Access Token*************`
+        Page URL : https://*****your-domain-name*****
+        Request Token : `*************Request Token*************`
+        Access Token : `*************Access Token*************`
 
 
 Currently used versions : 
 
-         Node.js : v17.4.0
-         Puppeteer : ^13.3.2
-         Kite Connect : ^4.0.0
+        Node.js : v17.4.0
+        Puppeteer : ^13.3.2
+        Kite Connect : ^4.0.0
