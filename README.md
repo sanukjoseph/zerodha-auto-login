@@ -15,22 +15,16 @@ you have to pass **API key, Secret Key, ClientID, Client_Password and TOTP** ( G
 
 After installing package..
 
-import zerodhaLogin from "zerodha-auto-login" 
-                    or 
-const zerodhaLogin = require("zerodha-auto-login")
+                   import zerodhaLogin from "zerodha-auto-login" 
+                                        or 
+                   const zerodhaLogin = require("zerodha-auto-login")
 
                    const login = zerodhaLogin(
-
-                    "********API*******",
-                    
-                    "*************Secret API Key**************",
-                    
-                    "******Client ID******",
-                    
-                    "**************Client Password**************",
-                    
-                    "**************TOTP*******************"
-
+                    "API",
+                    "Secret API Key",
+                    "Client ID",
+                    "Client Password",
+                    "TOTP"
                     )
 
 //pass props to the function based on above pattern only..
@@ -40,10 +34,8 @@ console.log(login)
 
 Output -
 
-Page URL : https://*****your-domain-name*****
-
-Request Token : `*************Request Token*************`
-
-Access Token : `*************Access Token*************`
+                    Page URL : https://*****your-domain-name*****
+                    Request Token : `*************Request Token*************`
+                    Access Token : `*************Access Token*************`
 
 
