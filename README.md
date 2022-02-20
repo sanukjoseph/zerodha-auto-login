@@ -19,7 +19,7 @@ import zerodhaLogin from "zerodha-auto-login"
                     or 
 const zerodhaLogin = require("zerodha-auto-login")
 
-const login = zerodhaLogin(
+                   const login = zerodhaLogin(
 
                     "********API*******",
                     
@@ -30,8 +30,9 @@ const login = zerodhaLogin(
                     "**************Client Password**************",
                     
                     "**************TOTP*******************"
-                    
+
                     )
+
 //pass props to the function based on above pattern only..
 //every time you call this function, a chromium browser will open and login to zerodha and return access token to your console.
 
