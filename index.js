@@ -7,23 +7,16 @@ function zerodhaLogin(ApiKey,SecretKey,UserId,Password,Pin) {
     (async () => {
         const browser = await puppeteer.launch({ headless: false });
         const page = await browser.newPage();
-        const credentials = {
-          apiKey: ApiKey,
-          apiSecret: SecretKey,
-          userId: UserId,
-          password: Password,
-          pin: Pin,
-        }
         await page.goto(
-          `https://kite.trade/connect/login?api_key=${credentials.apiKey}&v=3`
+          `https://kite.trade/connect/login?api_key=${ApiKey}&v=3`
         );
         await sleep(2000);
-        await page.type("input[type=text]", credentials.userId);
-        await page.type("input[type=password]", credentials.password);
+        await page.type("input[type=text]", UserId);
+        await page.type("input[type=password]", Password);
         await page.keyboard.press("Enter");
         await sleep(2000);
         await page.focus("input[type=text]").then((value) => console.log(value));
-        await page.keyboard.type(credentials.pin);
+        await page.keyboard.type(Pin);
         await page.keyboard.press("Enter");
         await page.waitForNavigation();
         const reqUrl = page.url();
@@ -33,11 +26,10 @@ function zerodhaLogin(ApiKey,SecretKey,UserId,Password,Pin) {
         await browser.close();
         try{
           const kc = new KiteConnect({
-            api_key: credentials.apiKey,
+            api_key: ApiKey,
           });
-          const response = await kc.generateSession(requestToken, credentials.apiSecret);
+          const response = await kc.generateSession(requestToken, SecretKey);
           const accessToken = response.access_token;
-        
           console.log("Access Token: ",accessToken);
         }catch (e){
           console.error(e);
