@@ -1,4 +1,4 @@
-This package is for automating zerodha login & access token generation
+This package is for automating zerodha login & access token generation on an individual basis.
 
 This package is focused on the algo trading, and requires TOTP apps **6 digit authentication code** for Kite 2FA.
 
@@ -34,9 +34,8 @@ then :
          console.log(login)
 
 
-Every time you call this function, a chromium browser will open and login to zerodha and return access token to your console.
+Pass props to the function based on above pattern only. Every time you call this function, a chromium browser will open and login to zerodha and return access token to your console.
 
-         Pass props to the function based on above pattern only..
 
 
 Output -
