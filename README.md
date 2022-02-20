@@ -6,6 +6,7 @@ If your account is not TOTP enabled, follow this link:
 https://support.zerodha.com/category/your-zerodha-account/login-credentials/login-credentials-of-trading-platforms/articles/time-based-otp-setup
 
 Requirements:
+
         API key, 
         Secret Key, 
         ClientID, 

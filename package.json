@@ -1,6 +1,6 @@
 {
   "name": "zerodha-auto-login",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "zerodha auto login to get access token with one click",
   "main": "index.js",
   "scripts": {
