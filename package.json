@@ -1,0 +1,28 @@
+{
+  "name": "zerodha-auto-login",
+  "version": "1.0.1",
+  "description": "zerodha auto login to get access token with one click",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanukjoseph/zerodha-auto-login.git"
+  },
+  "keywords": [
+    "Zerodha",
+    "Zerodha_API",
+    "Zerodha_Access_Token"
+  ],
+  "author": "Sanu K Joseph",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanukjoseph/zerodha-auto-login.git/issues"
+  },
+  "homepage": "https://github.com/sanukjoseph/zerodha-auto-login.git#readme",
+  "dependencies": {
+    "kiteconnect": "^4.0.0",
+    "puppeteer": "^13.3.2"
+  }
+}
